@@ -88,7 +88,7 @@ function App() {
   const monthlyTotal = subscriptionList.reduce((acc, curr) => acc + curr.amount, 0);
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#ffffff', color: '#ffffff', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif', padding: '20px' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#000000', color: '#ffffff', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif', padding: '20px' }}>
       
       {/* Mobil Başlık */}
       <header style={{ textAlign: 'center', marginTop: '20px', marginBottom: '40px' }}>
