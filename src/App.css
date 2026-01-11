@@ -1,25 +1,17 @@
 /* Bu kısım kenarlardaki beyazlığı tamamen yok eder */
 html, body, #root {
+  height: 100%; /* vh yerine % kullanmak daha güvenlidir */
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000000; /* Arka planı kökten siyah yapar */
-  overflow-x: hidden;
+  background-color: #000000;
+  /* overflow: hidden;  <-- BU SATIRI SİLİN */
+  overflow-y: auto;    /* Sayfanın yukarı kaymasına izin ver */
+  -webkit-overflow-scrolling: touch; /* iOS akıcılığı için */
 }
-
 * {
   box-sizing: border-box;
 }
-<div style={{ 
-    minHeight: '100vh', 
-    backgroundColor: '#000', 
-    color: '#fff', 
-    fontFamily: '-apple-system, sans-serif', 
-    padding: '20px',
-    paddingTop: 'calc(env(safe-area-inset-top) + 20px)', // Çentik koruması
-    paddingBottom: 'calc(env(safe-area-inset-bottom) + 100px)' // Alt bar koruması
-}}>
+
 .logo {
   height: 6em;
   padding: 1.5em;
